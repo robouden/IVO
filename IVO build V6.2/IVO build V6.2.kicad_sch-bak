@@ -1788,12 +1788,6 @@
 		(uuid "4d7486a2-05a1-4a2c-8702-d9ba06a00268")
 	)
 	(junction
-		(at 130.81 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62a666d0-1fdb-49dc-bbc5-a6bb62223b57")
-	)
-	(junction
 		(at 125.73 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1937,16 +1931,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 99.06) (xy 138.43 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d3fb32d-2130-42ef-b131-7f28da3bd9e6")
-	)
-	(wire
-		(pts
 			(xy 116.84 87.63) (xy 125.73 87.63)
 		)
 		(stroke
@@ -2037,7 +2021,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 99.06) (xy 130.81 99.06)
+			(xy 113.03 99.06) (xy 138.43 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2074,16 +2058,6 @@
 			(type default)
 		)
 		(uuid "68ed485c-05aa-4d14-8260-106f6ee633b1")
-	)
-	(wire
-		(pts
-			(xy 130.81 102.87) (xy 130.81 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a886d5d-ce65-468e-82f6-9af8a27d6281")
 	)
 	(wire
 		(pts
@@ -3685,76 +3659,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 130.81 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "131afa0c-72b6-45c3-9781-c0a087ce053a")
-		(property "Reference" "C20"
-			(at 134.62 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF"
-			(at 134.62 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 131.7752 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 130.81 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6203c86b-e56b-4bcd-9286-a056e1d7a0ca")
-		)
-		(pin "2"
-			(uuid "314ef2dc-b9a3-41fd-99b6-5b9c26b61174")
-		)
-		(instances
-			(project "IVO build V6.2"
-				(path "/b677c1c3-d122-4e96-b301-95dfb1fcc78b"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "2023-11-16_09-14-49:MGJ1D121505MPC-R7")
 		(at 196.85 99.06 180)
 		(unit 1)
@@ -4062,7 +3966,7 @@
 		(dnp no)
 		(uuid "48c2ea84-4e64-41bc-a459-1226460709e0")
 		(property "Reference" "R2"
-			(at 187.96 66.04 90)
+			(at 189.2299 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4070,8 +3974,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 ohm  5 Watt"
-			(at 200.66 68.58 90)
+		(property "Value" "10"
+			(at 191.77 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,7 +4034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6796c155-2a1b-45b8-bf2f-0f682f13ea45")
-		(property "Reference" "C25"
+		(property "Reference" "C20"
 			(at 105.41 72.39 0)
 			(effects
 				(font
@@ -4184,73 +4088,7 @@
 		(instances
 			(project "IVO build V6.2"
 				(path "/b677c1c3-d122-4e96-b301-95dfb1fcc78b"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79319ae3-b1c9-4131-9640-140bf589a75e")
-		(property "Reference" "#PWR04"
-			(at 130.81 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bbdb637e-d73e-4df0-b375-ebe697b46445")
-		)
-		(instances
-			(project "IVO build V6.2"
-				(path "/b677c1c3-d122-4e96-b301-95dfb1fcc78b"
-					(reference "#PWR04")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -4266,7 +4104,7 @@
 		(dnp no)
 		(uuid "7d144185-16e2-4102-828a-b837e8d7a3b8")
 		(property "Reference" "R1"
-			(at 187.96 58.42 90)
+			(at 189.2299 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,8 +4112,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 ohm  5 Watt"
-			(at 200.66 53.34 90)
+		(property "Value" "10"
+			(at 191.77 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +4248,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "220nF"
 			(at 113.03 83.8199 0)
 			(effects
 				(font
@@ -4813,9 +4651,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f24182d5-93bc-45f5-8f17-caec1a07bfa2")
 		(property "Reference" "U2"
-			(at 172.72 45.72 0)
+			(at 184.15 48.9518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +4662,7 @@
 			)
 		)
 		(property "Value" "1EDI60I12AF"
-			(at 177.8 48.26 0)
+			(at 184.15 51.4918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
