@@ -3637,7 +3637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92"
 			(at 126.365 81.28 0)
 			(effects
 				(font
@@ -4070,7 +4070,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 ohm  5 Watt"
+		(property "Value" "10 ohm  1 Watt"
 			(at 200.66 68.58 90)
 			(effects
 				(font
@@ -4274,7 +4274,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 ohm  5 Watt"
+		(property "Value" "10 ohm  1 Watt"
 			(at 200.66 53.34 90)
 			(effects
 				(font

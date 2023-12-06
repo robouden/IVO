@@ -1,4 +1,4 @@
-22218411913856073
+22266971799290960
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -1400,6 +1400,20 @@ Tactile Switch
 3
 3
 Button_Switch_SMD
+SW_SPST_CK_KMS2xxG
+Microminiature SMT Side Actuated, 4.2 x 2.8 x 1.42mm, https://www.ckswitches.com/media/1482/kms.pdf
+Switch SPST KMS2
+0
+5
+3
+Button_Switch_SMD
+SW_SPST_CK_KMS2xxGP
+Microminiature SMT Side Actuated, 4.2 x 2.8 x 1.42mm with pegs, https://www.ckswitches.com/media/1482/kms.pdf
+Switch SPST KMS2
+0
+5
+3
+Button_Switch_SMD
 SW_SPST_CK_KXT3
 https://www.ckswitches.com/media/1465/kxt3.pdf
 Switch SPST KXT3
@@ -2036,6 +2050,13 @@ switch single-pole double-throw spdt ON-ON illuminated LED
 0
 6
 6
+Button_Switch_THT
+SW_NKK_NR01
+NKK Switches NR01 series rotary switch, 10.7 x 10.7mm. https://www.nkkswitches.com/pdf/NR01%20Rotaries.pdf
+NKK NR01 SP3T SP4T SP5T
+0
+10
+7
 Button_Switch_THT
 SW_PUSH-12mm
 SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
@@ -42896,6 +42917,13 @@ RJ45 ethernet magnetic
 16
 15
 Connector_RJ
+RJ45_Molex_9346520x_Horizontal
+1 Port RJ45 Magjack Connector Through Hole 10/100 Base-T, two LED, tab up
+RJ45 Magjack
+0
+14
+13
+Connector_RJ
 RJ45_Molex_0855135013_Vertical
 1 Port, RJ45, Series 85513, vertical, SMD, https://www.molex.com/pdm_docs/sd/855135013_sd.pdf
 RJ45 Vertical
@@ -50099,6 +50127,13 @@ DCDC SMD
 7
 7
 Converter_DCDC
+Converter_DCDC_Murata_MYRxP
+Murata MYRxP PicoBK DC/DC converter with inductor, 2x2.5mm, height 1.04mm. https://www.murata.com/en-global/products/power/nonisolated-dc-dc-converter/overview/lineup/picobk
+PicoBK DC/DC MYRBP MYRGP MYRLP
+0
+19
+9
+Converter_DCDC
 Converter_DCDC_Murata_NCS1SxxxxSC_THT
 Murata NCS1SxxxxSC https://power.murata.com/data/power/ncl/kdc_ncs1.pdf (Script generated with StandardBox.py) (Murata NCS1SxxxxSC https://power.murata.com/data/power/ncl/kdc_ncs1.pdf)
 Murata NCS1SxxxxSC
@@ -54018,6 +54053,13 @@ emi filter
 0
 5
 5
+Fuse
+FuseHolder_Blade_ATO_Littelfuse_FLR_178.6165
+Littelfuse fuse holder for ATO/FKS blade fuses, 80V, vertical, 20 x 6mm, PCB thickness up to 1.5mm, http://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/ato/littelfuse-fuse-holder-ato-flr-pcb-datasheet.pdf
+ATO FKS blade fuse holder
+0
+8
+2
 Fuse
 Fuse_0402_1005Metric
 Fuse SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
@@ -64309,6 +64351,76 @@ planar light pipe 1 way 3mm
 0
 0
 OptoDevice
+Lightpipe_Bivar_SLP3-150-100-F
+1-way, 3mm lightpipe, flat face, 3.8mm lens output height, 2.54mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-100-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 2.54mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-150-F
+1-way, 3mm lightpipe, flat face, 3.8mm lens output height, 3.81mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-150-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 3.81mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-200-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 5.08mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-250-F
+1-way, 3mm lightpipe, flat face, 3.8mm lens output height, 6.35mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-250-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 6.35mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-300-F
+1-way, 3mm lightpipe, flat face, 3.8mm lens output height, 7.62mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-300-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 7.62mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
+Lightpipe_Bivar_SLP3-150-450-R
+1-way, 3mm lightpipe, round face, 3.8mm lens output height, 11.43mm protrusion, https://www.bivar.com/parts_content/Datasheets/SLP3-150-XXX-X.pdf
+light pipe 1 way 3mm 
+0
+0
+0
+OptoDevice
 Lightpipe_Dialight_515-1064F
 https://www.dialightsignalsandcomponents.com/515-optopipe-light-pipe-trilevel-2-5mm-rnd-flat-diff-lens-press-fit/#tab-resources
 lightpipe triple tower right angle 3mm
@@ -67683,6 +67795,13 @@ DFN 0.45
 15
 13
 Package_DFN_QFN
+DFN-12-1EP_3x3mm_P0.5mm_EP1.4x2.55mm
+DFN, 12 Pin (https://www.st.com/resource/en/datasheet/st25dv04k.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN NoLead
+0
+14
+13
+Package_DFN_QFN
 DFN-12-1EP_3x3mm_P0.5mm_EP1.6x2.5mm
 DFN, 12 Pin (https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MIC2207-2MHz-3A-PWM-Buck-Regulator-DS20006470A.pdf#page=22), generated with kicad-footprint-generator ipc_noLead_generator.py
 DFN NoLead
@@ -70679,6 +70798,20 @@ QFN NoLead
 127
 65
 Package_DFN_QFN
+Texas_S-PWQFN-N16_EP1.2x0.8mm
+Texas RTE WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+21
+17
+Package_DFN_QFN
+Texas_S-PWQFN-N16_EP1.2x0.8mm_ThermalVias
+Texas RTE WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+23
+17
+Package_DFN_QFN
 Texas_S-PWQFN-N16_EP2.1x2.1mm
 QFN, 16 Pin (http://www.ti.com/lit/ds/symlink/drv8801.pdf#page=31 MO-220 variation VGGC), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
@@ -71399,20 +71532,6 @@ WQFN NoLead
 0
 24
 15
-Package_DFN_QFN
-WQFN-16-1EP_3x3mm_P0.5mm_EP0.8x1.2mm
-WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
-WQFN NoLead
-0
-21
-17
-Package_DFN_QFN
-WQFN-16-1EP_3x3mm_P0.5mm_EP0.8x1.2mm_ThermalVias
-WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
-WQFN NoLead
-0
-23
-17
 Package_DFN_QFN
 WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm
 WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tpa6132a2.pdf#page=24), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -77070,6 +77189,13 @@ Texas WSON6 2x2mm
 10
 8
 Package_SON
+Texas_DQX002A
+Texas DQX - 2pin WSON, 2.5x1.7mm body, 0.8mm height. https://www.ti.com/lit/ds/symlink/lmt01.pdf
+WSON-2 DQX
+0
+2
+2
+Package_SON
 Texas_DRC0010J
 Texas DRC0010J, VSON10 3x3mm Body, 0.5mm Pitch,  http://www.ti.com/lit/ds/symlink/tps63000.pdf
 Texas VSON10 3x3mm
@@ -80713,6 +80839,13 @@ Potentiometer_THT
 Potentiometer_Bourns_3386P_Vertical
 Potentiometer, vertical, Bourns 3386P, https://www.bourns.com/pdfs/3386.pdf
 Potentiometer vertical Bourns 3386P
+0
+3
+3
+Potentiometer_THT
+Potentiometer_Bourns_3386W_Vertical
+Potentiometer, vertical, Bourns 3386W, https://www.bourns.com/docs/Product-Datasheets/3386.pdf
+Potentiometer 
 0
 3
 3
