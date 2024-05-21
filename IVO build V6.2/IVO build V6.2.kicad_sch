@@ -9347,7 +9347,7 @@
 	)
 	(text "Outside board\n"
 		(exclude_from_sim no)
-		(at 233.68 68.58 0)
+		(at 269.24 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9729,10 +9729,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3681bb37-9bb3-492e-9b18-8af66e22eb43")
 		(property "Reference" "Q2"
-			(at 213.36 49.5299 0)
+			(at 210.82 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9741,7 +9740,7 @@
 			)
 		)
 		(property "Value" "C2M0080120D"
-			(at 213.36 52.0699 0)
+			(at 195.58 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10430,7 +10429,7 @@
 			)
 		)
 		(property "Value" "bridge"
-			(at 203.2 67.31 0)
+			(at 203.2 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
