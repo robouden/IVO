@@ -13,7 +13,7 @@
 
 DacTone audio;                 // create audio object
 
-const int freq = 1000; // Frequency in Hz
+const int freq = 4000; // Frequency in Hz
 const int resolution = 8; // PWM resolution
 
 enum WaveType {
@@ -83,7 +83,7 @@ void setup()
     // Square wave configuration
     ledcSetup(0, freq, resolution);
     ledcAttachPin(SQUARE_PIN, 0);
-    ledcWrite(0, 128); // 50% duty cycle
+    ledcWrite(0, 64); // 50% duty cycle
   }
     // Setup the TFT display
     M5.begin();
