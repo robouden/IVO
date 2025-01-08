@@ -26,7 +26,6 @@ WaveType waveType = SQUARE_WAVE; // SINE_WAVE, SQUARE_WAVE, TRIANGLE_WAVE
 
 
 void generateTriangleWave(int freq);
-
   
 // The scrolling area must be a integral multiple of TEXT_HEIGHT
 #define TEXT_HEIGHT 16 // Height of text to be printed and scrolled
@@ -55,27 +54,27 @@ byte data = 0;
 boolean change_colour = 1;
 boolean selected = 1;
 
-// We have to blank the top line each time the display is scrolled, but this
-// takes up to 13 milliseconds for a full width line, meanwhile the serial
-// buffer may be filling... and overflowing We can speed up scrolling of short
-// text lines by just blanking the character we drew
-int blank[19]; // We keep all the strings pixel lengths to optimise the speed
+
+
+
+
+// Some extra variables.:
+
+// const uint8_t nBits_forPWM = 8; // Number of bits used for PWM n=1 to 16[bit]
+// const double PWM_Frequency = 2000.0; // PWM frequency Maxfreq=80000000.0/2^n[Hz]
+
+// const uint8_t PWM_CH = 2; // PWM channel
+// const uint8_t PWM_PIN = 2; // GPIO PIN number used for PWM output
+
+
+int ValueIndex = 0; 
+
+
+int blank[19]; // We keep all the strings pixel lengths to optimize the speed
                // of the top line blanking
 
-/**
- * @brief Setup function, run once at boot.
- *
- * This function is responsible for setting up the M5Stack, turning on the
- * backlight, and setting up the serial port. It also clears the screen and
- * draws a top banner with the text "ZPE pulse generator - 115200 baud".
- *
- * @details
- *
- * This function is called once when the M5Stack is booted. It does not return
- * until all the setup is complete.
- *
- * @see loop()
- */
+
+
 void setup()
 {
 
@@ -93,30 +92,24 @@ void setup()
     // Setup baud rate and draw top banner
     Serial.begin(115200);
     Serial.print(" ZPE pulse generator - 115200 baud ");
-    M5.Lcd.setTextColor(TFT_WHITE, TFT_BLUE);
-    M5.Lcd.fillRect(0, 0, 320, TEXT_HEIGHT, TFT_BLUE);
+    M5.Lcd.setTextColor(TFT_WHITE, TFT_DARKGREY);
+    M5.Lcd.fillRect(0, 0, 320, TEXT_HEIGHT, TFT_DARKGREY);
     M5.Lcd.drawCentreString(" ZPE pulse generator - 115200 baud ", 320 / 2, 0, 2);
 
     // Change colour for scrolling zone text
     M5.Lcd.setTextColor(TFT_WHITE, TFT_BLACK);
 }
 
-/**
- * @brief Main loop function, runs repeatedly after setup().
- *
- * This function is called by the Arduino framework after the setup() function
- * has completed. It is responsible for waiting for data on the serial port,
- * and then drawing it onto the screen.
- *
- * @details
- *
- * This function does not return until the M5Stack is powered off. It is
- * responsible for processing all the serial data and updating the display.
- *
- * @see setup()
- */
-void loop(void)
-{
+
+void loop() {
+  M5.update();
+
+  if (M5.BtnA.wasPressed()) {
+    ValueIndex++;
+    M5.Lcd.setCursor(10, 20);
+    M5.Lcd.printf("duty ratio = %d/256 ", freq, ValueIndex);
+    // ledcWrite(PWM_CH, PWM_Values[ValueIndex]);
+  }
 }
 
 
