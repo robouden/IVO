@@ -73,6 +73,8 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "warning",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -451,6 +453,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -459,32 +462,10 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "+12V": "",
-      "GND": "",
-      "Net-(C12-Pad2)": "",
-      "Net-(C3-Pad2)": "",
-      "Net-(C4-Pad2)": "",
-      "Net-(D1-A)": "",
-      "Net-(D1-K)": "",
-      "Net-(Q2-G)": "",
-      "Net-(U1-OUT)": "",
-      "Net-(U2-Charge)": "",
-      "Net-(U2-Discharge)": "",
-      "Net-(U2-VCC2)": "",
-      "Net-(U3-+VIN)": "",
-      "Net-(U3-0V)": "",
-      "unconnected-(U2-GND2-Pad8)": "",
-      "unconnected-(U2-IN+-Pad2)": "",
-      "unconnected-(U2-IN--Pad3)": "",
-      "unconnected-(U3--VIN-Pad1)": "",
-      "unconnected-(U3--VOUT-Pad3)": "",
-      "unconnected-(U3-NC-Pad2)": "",
-      "unconnected-(U3-NC-Pad7)": ""
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
