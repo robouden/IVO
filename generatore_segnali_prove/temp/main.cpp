@@ -1,5 +1,7 @@
+
 #include <Arduino.h>
 #include "DacTone.h"           // this is the DAC audio library
+
 
 #define SQUARE_PIN 26 // Pin for square wave
 
@@ -20,14 +22,14 @@ enum WaveType {
   TRIANGLE_WAVE           // max 300 Hz
 };
 
-WaveType waveType = TRIANGLE_WAVE; // SINE_WAVE, SQUARE_WAVE, TRIANGLE_WAVE
+WaveType waveType = SQUARE_WAVE; // SINE_WAVE, SQUARE_WAVE, TRIANGLE_WAVE
 
 
 void generateTriangleWave(int freq);
 
 void setup() {
   Serial.begin(115200);
-  delay(2000);
+  delay(1000);
 
   if(waveType != SINE_WAVE) {
     // Square wave configuration
@@ -35,6 +37,7 @@ void setup() {
     ledcAttachPin(SQUARE_PIN, 0);
     ledcWrite(0, 128); // 50% duty cycle
   }
+ Serial.print(" Setup done");
 }
 
 void loop() {
