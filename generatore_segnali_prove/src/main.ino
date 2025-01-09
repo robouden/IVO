@@ -67,7 +67,7 @@ boolean selected = 1;
 // const uint8_t PWM_PIN = 2; // GPIO PIN number used for PWM output
 
 
-int ValueIndex = 0; 
+int ValueIndex = 2; 
 
 
 int blank[19]; // We keep all the strings pixel lengths to optimize the speed
@@ -107,7 +107,14 @@ void loop() {
   if (M5.BtnA.wasPressed()) {
     ValueIndex++;
     M5.Lcd.setCursor(10, 20);
-    M5.Lcd.printf("duty ratio = %d/256 ", freq, ValueIndex);
+    M5.Lcd.printf("duty ratio = %d/256 ValueIndex= %d", freq, ValueIndex);
+    // ledcWrite(PWM_CH, PWM_Values[ValueIndex]);
+  }
+
+   if (M5.BtnB.wasPressed()) {
+    ValueIndex--;
+    M5.Lcd.setCursor(10, 20);
+    M5.Lcd.printf("duty ratio = %d/256 ValueIndex= %d", freq, ValueIndex);
     // ledcWrite(PWM_CH, PWM_Values[ValueIndex]);
   }
 }
