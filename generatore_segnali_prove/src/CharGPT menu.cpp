@@ -35,7 +35,7 @@ void setup()
     M5.Lcd.setTextColor(WHITE);
     M5.Lcd.setTextSize(2); // Set larger text size (2x larger than default)
     M5.Lcd.setCursor(10, 20);
-    M5.Lcd.printf("Square wave generator V0.9");
+    M5.Lcd.printf("Square wave gen V0.9");
 
     delay(1000); // Show this message for 2 seconds to check if the display works
     M5.Lcd.fillScreen(BLACK);
@@ -66,7 +66,24 @@ void loop()
         adjustParameter(-1);
         displayMenu();
     }
+
+    // Long press handling for Button B: continuously adjust frequency when held down, only in FREQUENCY mode
+    if (M5.BtnB.isPressed() && current_option == FREQUENCY)
+    {
+        delay(100); // Add delay to prevent excessive button presses
+        adjustParameter(1);
+        displayMenu();
+    }
+
+    // Long press handling for Button C: continuously adjust frequency when held down, only in FREQUENCY mode
+    if (M5.BtnC.isPressed() && current_option == FREQUENCY)
+    {
+        delay(100); // Add delay to prevent excessive button presses
+        adjustParameter(-1);
+        displayMenu();
+    }
 }
+
 
 // Display the current menu based on the selected option
 void displayMenu()
